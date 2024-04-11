@@ -18,7 +18,7 @@ echo "cpf: $cpf<br>";
 echo "cnpj: $cnpj<br>";
 
 
-$query = "insert into usuario (usu_nome, usu_sobre_nome, usu_telefone, usu_email, usu_senha, usu_telefone, usu_cpf, usu_cnpj ) values('$firstname' , '$lastname', '$email','$password','$number','$cpf','$cnpj')";
+$query = "insert into cliente (usu_nome, usu_sobre_nome, usu_email, usu_senha, usu_telefone, usu_cpf, usu_cnpj ) values('$firstname' , '$lastname', '$email','$password','$number','$cpf','$cnpj')";
 try{
     mysqli_query($conn,$query);
 }catch(mysqli_sql_exception $e){
